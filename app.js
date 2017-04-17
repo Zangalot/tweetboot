@@ -40,6 +40,7 @@ function sendTweets() {
 
                 setTimeout( function (i) {
                     var ids = idsDates[i];
+                    console.log(ids)
                     Twitter.post('statuses/update', {status: '@paradigmate https://twitter.com/paradigmate/status/'+ids},  function(error, tweet, response){
                         if(error){
                             console.log(error);
