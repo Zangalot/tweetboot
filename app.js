@@ -2,10 +2,10 @@ var TwitterPackage = require('twitter');
 var schedule = require('node-schedule');
 
 var secret = {
-  consumer_key: 'fo1Kba98RLGRDWRalZZ7f0xIk',
-  consumer_secret: 'W6bS9ycQyG4aPaSfmYocELlpFMzaqH6DhfaSYmeHyyXl52CT5s',
-  access_token_key: '2577416416-XGXhR6yAFHJh3Dakp8ji826Y95IKuLq56OSn5FU',
-  access_token_secret: 'VQIeDcJCRX2qJGEHIR38acbiGsVaAnud8stFZuveH3GKN'
+    consumer_key: process.env.BOT_CONSUMER_KEY,
+    consumer_secret: process.env.BOT_CONSUMER_SECRET,
+    access_token: process.env.BOT_ACCESS_TOKEN,
+    access_token_secret: process.env.BOT_ACCESS_TOKEN_SECRET
 }
 var Twitter = new TwitterPackage(secret);
 
