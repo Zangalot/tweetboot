@@ -12,5 +12,8 @@
   "dependencies": {
     "node-schedule": "^1.2.1",
     "twitter": "^1.7.0"
+  },
+  "engines": {
+    "node": "7.1.0"
   }
 }
