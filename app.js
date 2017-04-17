@@ -23,7 +23,7 @@ function formatDate(date) {
 
   return day + ' ' + monthNames[monthIndex] + ' ' + year;
 }
-/*function sendTweets() {
+function sendTweets() {
     Twitter.get('statuses/user_timeline',{'screen_name':'paradigmate'},function(error, tweets, response) {
         if (!error) {
             var idsDates = [];
@@ -49,11 +49,5 @@ function formatDate(date) {
             }
         }
     });
-}*/
-
-/*var schedule = require('node-schedule');
- 
-*/
-var j = schedule.scheduleJob('*/5 * * * *', function(){
-  console.log('The answer to life, the universe, and everything!');
-});
+}
+var j = schedule.scheduleJob('*/20 * * * *', sendTweets);
